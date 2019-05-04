@@ -1,0 +1,32 @@
+</div>
+<footer class="container mt-5 mb-5">
+  <div class="row">
+    <h5 class="mx-auto">Zion data center</h5>
+  </div>
+</footer>
+</main>
+<script src="/matrix/jquery-3.4.1.slim.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    console.log($('tr:first-child')[0]);
+    $('table').wrap(function() {
+      return '<div class="table-responsive"/>'
+    }).addClass('table table-striped table-hover')
+    $('tr:first-child').insertBefore('tbody').wrap('<thead/>')
+    $('table').find('img').each(function() {
+      $(this).parent().addClass($(this).attr('alt').replace(/\[/g, 'icon-').replace(/\]/g, '').toLowerCase() + ' icon')
+      $(this).remove()
+    })
+    $('td').removeAttr('align');
+    $('tbody>tr>td:nth-child(1)').addClass('tcol-1');
+    $('tbody>tr>td:nth-child(2)').addClass('tcol-2');
+    $('tbody>tr>td:nth-child(3)').addClass('tcol-3');
+    $('tbody>tr>td:nth-child(4)').addClass('tcol-4');
+
+    $('thead>tr>th:nth-child(1)').addClass('tcol-1');
+    $('thead>tr>th:nth-child(2)').addClass('tcol-2');
+    $('thead>tr>th:nth-child(3)').addClass('tcol-3');
+    $('thead>tr>th:nth-child(4)').addClass('tcol-4');
+  });
+
+</script>
