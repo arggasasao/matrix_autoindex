@@ -1,0 +1,6 @@
+{
+	"port": 5050,
+	"host": "localhost",
+  "browser": "Google Chrome Canary",
+	"entry-file": "index_.html"
+}

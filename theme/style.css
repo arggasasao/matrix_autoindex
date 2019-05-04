@@ -1,0 +1,12 @@
+/* reseting stuff */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* basic styles */
+body {
+    background: #333;
+    font-size: 12px;
+    /* font-size: calc(0.25vh + 0.25vw + 0.85em); */
+}
